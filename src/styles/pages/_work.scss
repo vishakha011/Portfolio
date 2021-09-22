@@ -1,0 +1,31 @@
+.work-section{
+    padding-bottom: 5rem;
+    &__heading {
+        margin-bottom: 4rem;
+    }
+    &__card {
+        margin-bottom: 3rem;
+        .filters {
+            font-size: 1rem;
+            font-family: $secondary-font;
+            color: $black-color;
+            margin-right: 3rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover  {
+                color: $indigo-color;
+            }
+        }
+       
+    }
+    @media screen and (max-width: 1024px) {
+        .filters {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .content-filter {
+        margin-top: 3rem;
+        
+    }
+}

@@ -1,0 +1,11 @@
+.blog-section {
+    padding-bottom: 10rem;
+    &__card {
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+	.blog-section {
+        padding-bottom: 0;
+    }
+}

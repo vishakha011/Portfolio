@@ -1,0 +1,37 @@
+/* ---------------------------------------------------------------
+Import font-families
+--------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rubik:ital,wght@0,500;1,400&display=swap');
+
+/* ---------------------------------------------------------------
+Import Remixicon
+--------------------------------------------------------------- */
+// @import 'remixicon/fonts/remixicon.css';
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
+
+/* ---------------------------------------------------------------
+Import partials
+--------------------------------------------------------------- */
+
+@import "base/reset";
+@import "base/variables";
+@import "base/base-styles";
+@import "base/modular";
+@import "base/grid";
+@import "partials/header";
+@import "partials/card";
+@import "partials/footer";
+@import "partials/loadder";
+
+
+
+
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+@import "pages/hero";
+@import "pages/about";
+@import "pages/skills";
+@import "pages/work";
+@import "pages/blog";
+@import "pages/contact";
