@@ -14,18 +14,18 @@ import { skillSet } from '../data';
 import { Blogs } from '../data';
 
 const Dashboard =() => {
-  const [skills, setSkills] = useState([])
+  const [skills, setSkills] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const aboutSection = useRef(null);
   const workSection = useRef(null);
 
   const goToAboutSection = () => {
-    window.scrollTo({ top: aboutSection.current.offsetTop, behavior: "smooth"})
+    window.scrollTo({ top: aboutSection.current.offsetTop, behavior: "smooth"});
   };
 
   const goToWorkSection = () => {
-    window.scrollTo({ top: workSection.current.offsetTop, behavior: "smooth"})
+    window.scrollTo({ top: workSection.current.offsetTop, behavior: "smooth"});
   };
 
 
@@ -38,26 +38,26 @@ const Dashboard =() => {
   if(loading) {
     return (
       <Loader />
-    )
+    );
   }
 
   return (
-      <>
-        <Header/>
-        <Hero 
-          goToWorkSection={goToWorkSection}
-          goToAboutSection={goToAboutSection}
-        />
-        <About aboutSection={aboutSection} />
-        <Skills skills={skills}/>
-        <Work 
-          workSection={workSection}
-          />
-        <Blog blogs={blogs} />
-        <Contact />
-        <Footer />
-      </>
-  )
+    <>
+      <Header/>
+      <Hero 
+        goToWorkSection={goToWorkSection}
+        goToAboutSection={goToAboutSection}
+      />
+      <About aboutSection={aboutSection} />
+      <Skills skills={skills}/>
+      <Work 
+        workSection={workSection}
+      />
+      <Blog blogs={blogs} />
+      <Contact />
+      <Footer />
+    </>
+  );
 };
 
 export default Dashboard;

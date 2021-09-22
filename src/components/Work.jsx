@@ -17,24 +17,24 @@ const Work = ({ workSection }) => {
   const [uniqueTags, setUniqueTags] = useState(tags);
 
   const renderProjects = () => {
-    const filterProjects = Projects.filter((project) => {
+    const filterProjects = Projects.filter(project => {
       if(project.tags.includes("Highlight")) {
         return project;
       }
-    })
+    });
     setProjects(filterProjects);
-  }
+  };
  
 
-  const handleFilterProjects = (tag) => {
-    const filterProjects = Projects.filter((project) => {
-        if(project.tags.includes(tag)) {
-          return project;
-        }
-      })
+  const handleFilterProjects = (tag => {
+    const filterProjects = Projects.filter((project => {
+      if(project.tags.includes(tag)) {
+        return project;
+      }
+    }));
     setActiveTag(tag);
     setProjects(filterProjects);
-  }
+  });
 
   useEffect(() => {
     renderProjects();
@@ -44,47 +44,48 @@ const Work = ({ workSection }) => {
   if(loading) {
     return (
       <Loader />
-    )
+    );
   };
 
   return (
-      <>
+    <>
       <section className="work-section" id="work" ref={workSection}>
         <div className="container">
           <div className="work-section__heading main-text">            
             <h2 className="main-title">Work</h2>    
           </div>
-            <div className="work-section__card">
-              <div className="projects-filter">
-                <ul className="flex">
-                  {uniqueTags.map((tag) => {
-                    return (
+          <div className="work-section__card">
+            <div className="projects-filter">
+              <ul className="flex">
+                {uniqueTags.map((tag, index) => {
+                  return (
                     <li 
+                      key={index}
                       className={activeTag === tag ? "filters active" : "filters"}
                       onClick={() => handleFilterProjects(tag)}
-                      >
+                    >
                       {tag}
                     </li>
-                  )
-                  })}
-                </ul>
-              </div>
-              <div className="content-filter grid gap-2 col-3">    
-                {projects.map((project) => {
-                  return (
+                  );
+                })}
+              </ul>
+            </div>
+            <div className="content-filter grid gap-2 col-3">    
+              {projects.map((project => {
+                return (
                   <Card 
                     data={project}
                     cardLink = {true}
                     key={project.id}
                   />
-                  )
-                })}
-              </div>
+                );
+              }))}
             </div>
+          </div>
         </div>
       </section>
-      </>  
-  )
+    </>  
+  );
 };
 
 export default Work;
