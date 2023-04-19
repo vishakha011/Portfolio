@@ -19,7 +19,7 @@ const About =({ aboutSection }) => {
                 <p>I care deeply about building applications that are usable and pleasant for the most number of people possible. I am currently seeking an opportunity as a full-stack developer in a fast-paced organisation where I can expand my skills while contributing to the success of the company.</p>
               </div>
               <div className="download-btn">
-                <a href="/resume/Vishakha_Khatade.pdf" target="_blank" rel="noopener noreferrer" download> 
+                <a href="/resume/Vishakha_Khatade_Resume.pdf" target="_blank" rel="noopener noreferrer" download> 
                   <button className="btn secondary-download-btn">
                     <span>Resume</span> 
                     <div className="download-icon">
