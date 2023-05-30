@@ -56,7 +56,7 @@ const Work = ({ workSection }) => {
           </div>
           <div className="work-section__card">
             <div className="projects-filter">
-              <ul className="flex">
+              <ul className="flex flex-wrap">
                 {uniqueTags.map((tag, index) => {
                   return (
                     <li 

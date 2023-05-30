@@ -85,6 +85,15 @@
 }
 
 @media screen and (max-width: 1024px) {
+	.about-section__heading { 
+		text-align: center !important;
+		width: 100%;
+	}
+
+	.secondary-download-btn {
+		left: 50%;
+		transform: translate(-50%);
+	}
 	.col-img {
 		max-width: 100%;
 	}

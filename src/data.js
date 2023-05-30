@@ -1,6 +1,6 @@
 import React from 'react';
 import { v4 as uuid } from 'uuid';
-import { SiHtml5, SiJavascript, SiReact, SiMongodb, SiTailwindcss } from 'react-icons/si';
+import { SiHtml5, SiJavascript, SiTypescript, SiReact, SiMongodb, SiTailwindcss } from 'react-icons/si';
 import { DiCss3 } from 'react-icons/di';
 import { FaNodeJs, FaSass } from 'react-icons/fa';
 import { AiOutlineGithub } from 'react-icons/ai';
@@ -21,6 +21,11 @@ export const skillSet = [
     "id": uuid(),
     "skill": "JavaScript",
     "img": <SiJavascript className="skill-icon" />
+  },
+  {
+    "id": uuid(),
+    "skill": "TypeScript",
+    "img": <SiTypescript className="skill-icon" />
   },
   {
     "id": uuid(),
