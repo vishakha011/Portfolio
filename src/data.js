@@ -66,7 +66,7 @@ export const Projects = [
     "title": "Kriya",
     "description": "Kriya is a Yoga and Spiritual Wellness theme website. The layout is created for Yoga trainer, Meditation centers, Physical & Mental wellness center and is kind of a final project based on my learnings of HTML & CSS.",
     "img": "/images/project/kriya.png",
-    "deploymentLink": "https://ikushaldave.github.io/kriya/",
+    "deploymentLink": "https://ikushaldave.github.io/kriya",
     "githubLink":"https://github.com/vishakha011/kriya"
   },
   {
